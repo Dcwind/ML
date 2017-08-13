@@ -7,6 +7,8 @@ test_idx = [0, 50, 100]
 
 # training data
 train_target = np.delete(iris.target, test_idx)
-train_data = np.delete(iris.target, test_idx, axis=0)
+train_data = np.delete(iris.data, test_idx, axis=0)
 
-#
+# testing data
+test_target = iris.target[test_idx]
+test_data = iris.data[test_idx]
