@@ -16,3 +16,7 @@ test_data = iris.data[test_idx]
 # train classifier
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(train_data, train_target)
+
+# test
+print(test_target)
+print(clf.predict(test_data))
