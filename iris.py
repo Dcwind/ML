@@ -12,3 +12,7 @@ train_data = np.delete(iris.data, test_idx, axis=0)
 # testing data
 test_target = iris.target[test_idx]
 test_data = iris.data[test_idx]
+
+# train classifier
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(train_data, train_target)
