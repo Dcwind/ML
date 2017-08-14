@@ -1,1 +1,3 @@
-from sklearn.datasets import load_iris
+# import dataset
+from sklearn import datasets
+iris = datasets.load_iris
