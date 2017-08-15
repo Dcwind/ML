@@ -11,7 +11,10 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = .5)
 
 # import classifier
 from sklearn import tree
-my_classifier =  tree.DecisionTreeClassifier()
+# my_classifier =  tree.DecisionTreeClassifier()
+
+from sklearn.neighbors import KNeighborsClassifier
+my_classifier =  KNeighborsClassifier()
 
 # train classifier
 my_classifier.fit(x_train, y_train)
