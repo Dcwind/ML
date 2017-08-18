@@ -1,5 +1,10 @@
 class ScrappyKKN():
-    def
+    def fit(self, x_train, y_train)
+        pass
+
+    def predict(self, x_test)
+        pass
+
 # import dataset
 from sklearn import datasets
 iris = datasets.load_iris()
@@ -16,7 +21,7 @@ from sklearn import tree
 # my_classifier =  tree.DecisionTreeClassifier()
 
 # from sklearn.neighbors import KNeighborsClassifier
-my_classifier =  KNeighborsClassifier()
+my_classifier =  ScrappyKKN()
 
 # train classifier
 my_classifier.fit(x_train, y_train)
