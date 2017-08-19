@@ -12,10 +12,12 @@ class ScrappyKKN():
     def predict(self, x_test):
         predictions = []
         for row in x_test:
-            label = random.choice(self.y_train)
+            label = self.closest(row)
             predictions.append(label)
-
         return predictions
+    def closest(self, row):
+        best_dist =  euc(row, self.x_train[0])
+        best_index = 0
 
 # import dataset
 from sklearn import datasets
